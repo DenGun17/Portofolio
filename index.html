@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-container":"#5e6177","outline-variant":"#c7c6cd","on-error-container":"#93000a","tertiary-fixed":"#ffdad9","inverse-primary":"#c1c5dc","secondary-fixed":"#dee1fb","background":"#f9f9f9","surface-bright":"#f9f9f9","primary-fixed-dim":"#c1c5dc","surface-tint":"#595e71","on-secondary-fixed-variant":"#42465b","surface":"#f9f9f9","on-tertiary-fixed":"#400009","inverse-surface":"#2f3131","surface-container-lowest":"#ffffff","secondary-container":"#dbdef8","light-gray":"#E9E9EA","navy":"#252A3B","tertiary-container":"#5a0613","on-tertiary-fixed-variant":"#82252c","error-container":"#ffdad6","on-primary-fixed":"#161b2b","on-primary-container":"#8c91a6","tertiary-fixed-dim":"#ffb3b3","primary-fixed":"#dde1f8","tertiary":"#360006","on-primary-fixed-variant":"#414658","skill-red":"#E52D35","secondary-fixed-dim":"#c2c5de","on-tertiary":"#ffffff","surface-container":"#eeeeee","primary":"#101626","surface-dim":"#dadada","on-background":"#1a1c1c","surface-container-high":"#e8e8e8","secondary":"#595d73","on-secondary-fixed":"#161b2d","on-surface":"#1a1c1c","charcoal":"#303448","coral":"#FF8588","surface-variant":"#e2e2e2","inverse-on-surface":"#f0f1f1","on-tertiary-container":"#e26e72","error":"#ba1a1a","on-error":"#ffffff","on-primary":"#ffffff","surface-container-low":"#f3f3f4","surface-container-highest":"#e2e2e2","primary-container":"#252a3b","on-surface-variant":"#46464c","outline":"#76767d","muted-gray":"#6B7280","on-secondary":"#ffffff"},borderRadius:{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},spacing:{"margin":"32px","gutter":"24px","space-md":"16px","space-xl":"48px","space-lg":"24px","space-sm":"8px","space-xs":"4px","space-2xl":"80px"},fontFamily:{"body-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"]},fontSize:{"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["22px",{"lineHeight":"28px","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1200px] mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-navy tracking-tight">DEVFOLIO</span><span class="font-label-md text-label-md text-secondary uppercase tracking-wider">Deni Gunawan, M.Kom</span></div></div><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="text-navy font-bold"><a aria-current="page" class="transition-colors text-navy font-bold" data-path="portfolio" href="#about">Tentang</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-navy transition-colors" data-path="skills" href="#skills">Keahlian</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-navy transition-colors" data-path="education" href="#experience">Pendidikan</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-navy transition-colors" data-path="experience" href="#experience">Pengalaman</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-navy transition-colors" data-path="projects" href="#projects">Proyek / Portofolio</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-navy transition-colors" data-path="achievements" href="#achievements">Prestasi</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-navy transition-colors" data-path="contact" href="#contact">Kontak</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs rounded-full bg-light-gray text-navy font-label-lg text-label-lg hover:bg-surface-variant transition-colors" data-path="curriculum-vitae" href="#contact">Unduh CV</a><a class="inline-flex items-center justify-center px-space-md py-space-xs rounded-full bg-navy text-on-primary font-label-lg text-label-lg hover:bg-charcoal transition-colors" data-path="contact" href="#contact">Hubungi Saya</a><img alt="Foto Profil Deni Gunawan" class="w-8 h-8 rounded-full object-cover ml-space-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVHF3JhmLgJm3AtFcilUspTs3JDGbPhMSKD4SxcTM2qqGTwf42XR_ZH5n1IwKthD2z3ibpCtOz3DF-Vx02NhWEZWUOCFlCJgo7dZwJfDrLN-saS5ZNrT6xyitA5FkTPh3H528RuNp7XvDlHSTa9bQ8QXgiFqDpXckI51X-bg7o9OWEC3__Q96tfpt42leovK2WNEeUO7V4VgaxDU6B7IaSXCh9-90khV1GM88CK6c3vL_jR6hl-uhi"/></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<link rel="stylesheet" href="style.css">
+  <!-- HERO SECTION -->
+<section class="w-full max-w-[1200px] mx-auto px-gutter py-space-xl lg:py-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Column: Bio & Core Info -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-light-gray text-navy mb-space-md">
+<span class="w-2 h-2 rounded-full bg-coral animate-pulse"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Portofolio Pribadi</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-navy mb-space-xs tracking-tight">
+          Deni Gunawan, <span class="text-secondary font-headline-md text-headline-md">M.Kom</span>
+</h1>
+<p class="font-headline-sm text-headline-sm text-coral mb-space-md font-semibold">
+          Dosen &amp; Kreator Konten Digital
+        </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-space-lg leading-relaxed">
+          Pendidik, pemikir kreatif, dan spesialis multimedia yang berdedikasi memberdayakan mahasiswa serta komunitas kreatif melalui inovasi digital, lokakarya praktis, dan pendekatan desain yang human-centric.
+        </p>
+<!-- Actions -->
+<div class="flex flex-wrap items-center gap-space-md mb-space-xl">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-coral text-on-primary font-label-lg text-label-lg shadow-md hover:opacity-90 transition-all hover:scale-[1.02]" href="#projects">
+<span>Jelajahi Karya</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-surface-container-highest text-navy font-label-lg text-label-lg hover:bg-surface-variant transition-all hover:scale-[1.02]" href="#contact">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Unduh CV</span>
+</a>
+</div>
+<!-- Social Quick Links -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-md text-label-md text-secondary uppercase mr-space-xs">Terhubung:</span>
+<a class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-navy hover:bg-navy hover:text-on-primary transition-colors shadow-sm" href="mailto:deni.gunawan@bsi.ac.id" title="Kirim Email ke Deni">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-navy hover:bg-navy hover:text-on-primary transition-colors shadow-sm" href="#" title="Kanal YouTube">
+<span class="material-symbols-outlined text-[20px]">smart_display</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-navy hover:bg-navy hover:text-on-primary transition-colors shadow-sm" href="#" title="Profil LinkedIn">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-navy hover:bg-navy hover:text-on-primary transition-colors shadow-sm" href="#" title="Instagram">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Visual Frame with Real Photo -->
+<div class="lg:col-span-5 relative flex justify-center">
+<!-- Ambient decorative shapes -->
+<div class="absolute -top-6 -right-6 w-48 h-48 bg-coral/15 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-8 -left-6 w-56 h-56 bg-secondary-container/40 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative w-full max-w-[420px] rounded-lg overflow-hidden bg-surface-container-lowest shadow-xl p-space-xs group">
+<div class="relative w-full aspect-[4/5] rounded overflow-hidden bg-surface-container">
+<img alt="Deni Gunawan, M.Kom berbicara dalam lokakarya BSI Digination" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVHF3JhmLgJm3AtFcilUspTs3JDGbPhMSKD4SxcTM2qqGTwf42XR_ZH5n1IwKthD2z3ibpCtOz3DF-Vx02NhWEZWUOCFlCJgo7dZwJfDrLN-saS5ZNrT6xyitA5FkTPh3H528RuNp7XvDlHSTa9bQ8QXgiFqDpXckI51X-bg7o9OWEC3__Q96tfpt42leovK2WNEeUO7V4VgaxDU6B7IaSXCh9-90khV1GM88CK6c3vL_jR6hl-uhi"/>
+<!-- Floating Overlay Tag -->
+<div class="absolute bottom-4 left-4 right-4 bg-navy/90 backdrop-blur-md rounded px-space-md py-space-sm text-on-primary flex items-center justify-between shadow-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-coral text-[20px]" style="font-variation-settings: 'FILL' 1;">mic</span>
+<span class="font-label-md text-label-md font-bold tracking-wide">Pembicara Utama</span>
+</div>
+<span class="font-body-sm text-body-sm text-light-gray">BSI Digination</span>
+</div>
+</div>
+<!-- Editorial Accent Badge -->
+<div class="mt-space-sm px-space-sm pb-space-xs flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary">Universitas BSI Kampus Ciputat</span>
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-navy font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-skill-red"></span> Okt 2022
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- KEY STATS STRIP -->
+<section class="w-full bg-surface-container-low py-space-lg">
+<div class="max-w-[1200px] mx-auto px-gutter grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="flex flex-col items-center text-center p-space-sm">
+<span class="font-headline-xl text-headline-xl text-navy font-bold">10+</span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider mt-1">Tahun Mengajar</span>
+</div>
+<div class="flex flex-col items-center text-center p-space-sm">
+<span class="font-headline-xl text-headline-xl text-coral font-bold">45+</span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider mt-1">Workshop &amp; Pelatihan</span>
+</div>
+<div class="flex flex-col items-center text-center p-space-sm">
+<span class="font-headline-xl text-headline-xl text-navy font-bold">3.500+</span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider mt-1">Mahasiswa Dibimbing</span>
+</div>
+<div class="flex flex-col items-center text-center p-space-sm">
+<span class="font-headline-xl text-headline-xl text-skill-red font-bold">120+</span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider mt-1">Modul Kreatif</span>
+</div>
+</div>
+</section>
+<!-- ABOUT ME -->
+<section class="w-full max-w-[1200px] mx-auto px-gutter py-space-2xl" id="about">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="material-symbols-outlined text-coral text-[20px]" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Tentang Saya</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-navy mb-space-xl tracking-tight">Menjembatani Ketelitian Akademik &amp; Kreativitas Digital</h2>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Biography text -->
+<div class="lg:col-span-7 space-y-space-md">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+          Saya adalah Dosen Akademisi di bidang Ilmu Komputer sekaligus kreator konten multimedia aktif di Indonesia. Memiliki gelar Magister Komputer (M.Kom), misi utama saya adalah mentransformasikan konsep teknologi kompleks menjadi materi pembelajaran yang menarik, mudah dipahami, dan aplikatif bagi generasi profesional digital berikutnya.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Selama lebih dari satu dekade di Universitas BSI dan melalui Digital Creative Center (DCC), saya telah membimbing ribuan mahasiswa serta siswa SMK dalam dasar-dasar desain grafis, media antarmuka interaktif, alur produksi video, dan sistem informasi modern.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Di luar pengajaran di ruang kelas, saya rutin menginisiasi pelatihan kreatif berskala besar seperti <em>BSI Digination</em>, memproduksi modul kurikulum video, dan mempublikasikan penelitian ilmiah yang berfokus pada penerapan teknologi kreatif dalam dunia pendidikan.
+        </p>
+<!-- Signature quote pill -->
+<div class="p-space-md rounded bg-surface-container flex items-start gap-space-md mt-space-lg">
+<span class="material-symbols-outlined text-coral text-[28px]">format_quote</span>
+<p class="font-body-md text-body-md italic text-navy font-semibold">
+            "Desain bukan hanya tentang membuat sesuatu terlihat modern—tetapi bagaimana kita memperjelas tujuan, memantik rasa ingin tahu, dan membangun jembatan bagi mahasiswa menuju era digital."
+          </p>
+</div>
+</div>
+<!-- Key Focus Bento cards -->
+<div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="w-10 h-10 rounded-full bg-light-gray flex items-center justify-center text-navy mb-space-sm">
+<span class="material-symbols-outlined text-[22px]">school</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-navy mb-1">Pendidikan Tinggi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kurikulum Informatika &amp; Sistem Multimedia terapan.</p>
+</div>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="w-10 h-10 rounded-full bg-coral/20 flex items-center justify-center text-coral mb-space-sm">
+<span class="material-symbols-outlined text-[22px]">palette</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-navy mb-1">Desain Visual</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Identitas brand cetak, tipografi, dan desain grafis digital.</p>
+</div>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-navy mb-space-sm">
+<span class="material-symbols-outlined text-[22px]">video_library</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-navy mb-1">Produksi Media</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Penceritaan video, instalasi podcast, dan siaran langsung.</p>
+</div>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-skill-red mb-space-sm">
+<span class="material-symbols-outlined text-[22px]">podium</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-navy mb-1">Pembicara Publik</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Keynote, bootcamp industri, dan fasilitasi lokakarya.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SKILLS & EXPERTISE -->
+<section class="w-full bg-surface-container-low py-space-2xl" id="skills">
+<div class="max-w-[1200px] mx-auto px-gutter">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="material-symbols-outlined text-skill-red text-[20px]" style="font-variation-settings: 'FILL' 1;">insights</span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Keahlian &amp; Spesialisasi</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-navy mb-space-xl tracking-tight">Kompetensi &amp; Toolkit Teknis</h2>
+<!-- Progress bars grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-space-xl gap-y-space-md mb-space-xl">
+<!-- Skill item -->
+<div class="p-space-md bg-surface-container-lowest rounded shadow-sm">
+<div class="flex justify-between items-center mb-space-xs">
+<span class="font-label-lg text-label-lg text-navy font-semibold">Pengajaran &amp; Fasilitasi Workshop</span>
+<span class="font-label-md text-label-md text-coral font-bold">95%</span>
+</div>
+<div class="w-full bg-light-gray h-2.5 rounded-full overflow-hidden">
+<div class="bg-coral h-full rounded-full transition-all duration-1000" style="width: 95%;"></div>
+</div>
+</div>
+<!-- Skill item -->
+<div class="p-space-md bg-surface-container-lowest rounded shadow-sm">
+<div class="flex justify-between items-center mb-space-xs">
+<span class="font-label-lg text-label-lg text-navy font-semibold">Desain Grafis &amp; Komunikasi Visual</span>
+<span class="font-label-md text-label-md text-navy font-bold">90%</span>
+</div>
+<div class="w-full bg-light-gray h-2.5 rounded-full overflow-hidden">
+<div class="bg-navy h-full rounded-full transition-all duration-1000" style="width: 90%;"></div>
+</div>
+</div>
+<!-- Skill item -->
+<div class="p-space-md bg-surface-container-lowest rounded shadow-sm">
+<div class="flex justify-between items-center mb-space-xs">
+<span class="font-label-lg text-label-lg text-navy font-semibold">Kepemimpinan Tim &amp; Mentorship Mahasiswa</span>
+<span class="font-label-md text-label-md text-coral font-bold">92%</span>
+</div>
+<div class="w-full bg-light-gray h-2.5 rounded-full overflow-hidden">
+<div class="bg-coral h-full rounded-full transition-all duration-1000" style="width: 92%;"></div>
+</div>
+</div>
+<!-- Skill item -->
+<div class="p-space-md bg-surface-container-lowest rounded shadow-sm">
+<div class="flex justify-between items-center mb-space-xs">
+<span class="font-label-lg text-label-lg text-navy font-semibold">Penulisan Akademik &amp; Desain Kurikulum</span>
+<span class="font-label-md text-label-md text-navy font-bold">88%</span>
+</div>
+<div class="w-full bg-light-gray h-2.5 rounded-full overflow-hidden">
+<div class="bg-navy h-full rounded-full transition-all duration-1000" style="width: 88%;"></div>
+</div>
+</div>
+<!-- Skill item -->
+<div class="p-space-md bg-surface-container-lowest rounded shadow-sm">
+<div class="flex justify-between items-center mb-space-xs">
+<span class="font-label-lg text-label-lg text-navy font-semibold">Konten Kreatif &amp; Produksi Video</span>
+<span class="font-label-md text-label-md text-skill-red font-bold">85%</span>
+</div>
+<div class="w-full bg-light-gray h-2.5 rounded-full overflow-hidden">
+<div class="bg-skill-red h-full rounded-full transition-all duration-1000" style="width: 85%;"></div>
+</div>
+</div>
+<!-- Skill item -->
+<div class="p-space-md bg-surface-container-lowest rounded shadow-sm">
+<div class="flex justify-between items-center mb-space-xs">
+<span class="font-label-lg text-label-lg text-navy font-semibold">Prototipe Multimedia &amp; Desain UI</span>
+<span class="font-label-md text-label-md text-navy font-bold">80%</span>
+</div>
+<div class="w-full bg-light-gray h-2.5 rounded-full overflow-hidden">
+<div class="bg-navy h-full rounded-full transition-all duration-1000" style="width: 80%;"></div>
+</div>
+</div>
+</div>
+<!-- Tools & Software Tags Cloud -->
+<div class="p-space-lg bg-surface-container-lowest rounded shadow-sm">
+<h3 class="font-headline-sm text-headline-sm text-navy mb-space-md">Perangkat Utama &amp; Ekosistem</h3>
+<div class="flex flex-wrap gap-space-sm">
+<span class="px-space-md py-1.5 rounded-full bg-light-gray text-navy font-label-md text-label-md flex items-center gap-1.5 hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[16px]">brush</span> Adobe Photoshop
+          </span>
+<span class="px-space-md py-1.5 rounded-full bg-light-gray text-navy font-label-md text-label-md flex items-center gap-1.5 hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[16px]">explore_off</span> Adobe Illustrator
+          </span>
+<span class="px-space-md py-1.5 rounded-full bg-light-gray text-navy font-label-md text-label-md flex items-center gap-1.5 hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[16px]">movie_edit</span> Adobe Premiere Pro
+          </span>
+<span class="px-space-md py-1.5 rounded-full bg-light-gray text-navy font-label-md text-label-md flex items-center gap-1.5 hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[16px]">design_services</span> Figma
+          </span>
+<span class="px-space-md py-1.5 rounded-full bg-light-gray text-navy font-label-md text-label-md flex items-center gap-1.5 hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[16px]">cast_connected</span> OBS Studio &amp; Podcast Rig
+          </span>
+<span class="px-space-md py-1.5 rounded-full bg-light-gray text-navy font-label-md text-label-md flex items-center gap-1.5 hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[16px]">integration_instructions</span> HTML5 / Tailwind UI
+          </span>
+<span class="px-space-md py-1.5 rounded-full bg-light-gray text-navy font-label-md text-label-md flex items-center gap-1.5 hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[16px]">description</span> Google Workspace for Education
+          </span>
+<span class="px-space-md py-1.5 rounded-full bg-light-gray text-navy font-label-md text-label-md flex items-center gap-1.5 hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[16px]">menu_book</span> SINTA / Mendeley Academic
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- EDUCATION & EXPERIENCE TIMELINE -->
+<section class="w-full max-w-[1200px] mx-auto px-gutter py-space-2xl" id="experience">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="material-symbols-outlined text-coral text-[20px]" style="font-variation-settings: 'FILL' 1;">timeline</span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Perjalanan &amp; Pencapaian</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-navy mb-space-xl tracking-tight">Perjalanan Akademik &amp; Karir Profesional</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-xl">
+<!-- Left Column: Education -->
+<div>
+<div class="flex items-center gap-space-sm mb-space-lg">
+<div class="w-8 h-8 rounded-full bg-navy text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">school</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-navy">Pendidikan Formal</h3>
+</div>
+<div class="space-y-space-lg pl-4 relative">
+<!-- Timeline Vertical Track -->
+<div class="absolute left-1.5 top-2 bottom-2 w-0.5 bg-surface-container-high"></div>
+<!-- Education Card 1 -->
+<div class="relative pl-6">
+<div class="absolute -left-1 top-1.5 w-3 h-3 rounded-full bg-coral"></div>
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<span class="inline-block px-2 py-0.5 rounded-full bg-light-gray text-navy font-label-md text-label-md mb-space-xs">2017 – 2019</span>
+<h4 class="font-headline-sm text-headline-sm text-navy">Magister Ilmu Komputer (M.Kom)</h4>
+<p class="font-label-lg text-label-lg text-secondary mb-space-xs">Program Pascasarjana Informatika</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fokus pada Sistem Informasi Multimedia, usability software edukasi, dan metodologi pembelajaran berbasis komputer.</p>
+</div>
+</div>
+<!-- Education Card 2 -->
+<div class="relative pl-6">
+<div class="absolute -left-1 top-1.5 w-3 h-3 rounded-full bg-navy"></div>
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<span class="inline-block px-2 py-0.5 rounded-full bg-light-gray text-navy font-label-md text-label-md mb-space-xs">2010 – 2014</span>
+<h4 class="font-headline-sm text-headline-sm text-navy">Sarjana Ilmu Komputer (S.Kom)</h4>
+<p class="font-label-lg text-label-lg text-secondary mb-space-xs">Sistem Informatika &amp; Komputer</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lulus dengan predikat sangat memuaskan. Aktif sebagai koordinator klub kreatif multimedia mahasiswa dan asisten instruktur laboratorium komputer kampus.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Experience -->
+<div>
+<div class="flex items-center gap-space-sm mb-space-lg">
+<div class="w-8 h-8 rounded-full bg-coral text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">work</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-navy">Pengalaman Profesional</h3>
+</div>
+<div class="space-y-space-lg pl-4 relative">
+<!-- Timeline Vertical Track -->
+<div class="absolute left-1.5 top-2 bottom-2 w-0.5 bg-surface-container-high"></div>
+<!-- Experience Card 1 -->
+<div class="relative pl-6">
+<div class="absolute -left-1 top-1.5 w-3 h-3 rounded-full bg-coral animate-ping"></div>
+<div class="absolute -left-1 top-1.5 w-3 h-3 rounded-full bg-coral"></div>
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-light-gray text-navy font-label-md text-label-md">2016 – Sekarang</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-skill-red font-label-md text-label-md font-bold">AKTIF / SAAT INI</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-navy">Dosen Akademik Senior</h4>
+<p class="font-label-lg text-label-lg text-secondary mb-space-xs">Universitas BSI (Bina Sarana Informatika)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mengajar komunikasi visual, grafika komputer, dan sistem multimedia web. Membimbing skripsi tugas akhir mahasiswa serta memimpin inisiatif inovasi pedagogis digital.</p>
+</div>
+</div>
+<!-- Experience Card 2 -->
+<div class="relative pl-6">
+<div class="absolute -left-1 top-1.5 w-3 h-3 rounded-full bg-navy"></div>
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<span class="inline-block px-2 py-0.5 rounded-full bg-light-gray text-navy font-label-md text-label-md mb-space-xs">2020 – Sekarang</span>
+<h4 class="font-headline-sm text-headline-sm text-navy">Pembicara Workshop Kreatif &amp; Mentor</h4>
+<p class="font-label-lg text-label-lg text-secondary mb-space-xs">Digital Creative Center (DCC)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Trainer utama program kemitraan sekolah di Jabodetabek. Menyelenggarakan rangkaian lokakarya design thinking, podcasting, dan alur produksi konten kreatif.</p>
+</div>
+</div>
+<!-- Experience Card 3 -->
+<div class="relative pl-6">
+<div class="absolute -left-1 top-1.5 w-3 h-3 rounded-full bg-surface-tint"></div>
+<div class="p-space-md rounded bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<span class="inline-block px-2 py-0.5 rounded-full bg-light-gray text-navy font-label-md text-label-md mb-space-xs">2018 – 2022</span>
+<h4 class="font-headline-sm text-headline-sm text-navy">Produser Media Digital &amp; Konten</h4>
+<p class="font-label-lg text-label-lg text-secondary mb-space-xs">Studio Siaran &amp; Media Kampus</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mengawasi tata kelola produksi podcast kampus, pembuatan serial video promosi institusi, dan siaran multimedia mahasiswa.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FEATURED PROJECTS -->
+<section class="w-full bg-surface-container-low py-space-2xl" id="projects">
+<div class="max-w-[1200px] mx-auto px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="material-symbols-outlined text-coral text-[20px]" style="font-variation-settings: 'FILL' 1;">folder_special</span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Portofolio Pilihan</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-navy tracking-tight">Karya, Workshop &amp; Media Kreatif</h2>
+</div>
+<!-- Filter tabs -->
+<div class="flex flex-wrap gap-1 bg-surface-container p-1 rounded-full text-center" id="project-filters">
+<button class="px-space-md py-1 rounded-full font-label-md text-label-md bg-navy text-on-primary transition-all" data-filter="all">Semua</button>
+<button class="px-space-md py-1 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-navy transition-all" data-filter="creative">Kreatif</button>
+<button class="px-space-md py-1 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-navy transition-all" data-filter="workshops">Workshop</button>
+<button class="px-space-md py-1 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-navy transition-all" data-filter="tech">Teknologi</button>
+</div>
+</div>
+<!-- Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Project 1 -->
+<div class="project-item group bg-surface-container-lowest rounded overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="workshops">
+<div class="relative w-full aspect-[16/9] overflow-hidden bg-surface-container">
+<img alt="Deni Gunawan memandu workshop BSI Digination di hadapan peserta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Deni Gunawan speaking on stage at BSI Digination workshop with microphone in hand, professional banner behind him, engaged students and teachers in an auditorium, warm indoor stage lighting, modern Indonesian university setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS_A_GU-K4_vQSd8YxlId9UptJ3ny-jYA_E9IbJK6JKVoanoC07-4XF0nbALJgkYwzho8de3VlxRbaC8NCB8c8ezFazBVuTOc-P78NErohh_sthlNG8ZfkIK1O33EUN29iqNcR3NGsL9fKrfOoHKspUCFGJIU_X1yYfHYM5KQa_FPQArWKtsTeTtwN17Y7Fu7zR-TkmpJ8wS4XXz9x6pjsNcNTk5Lx642Fnt6zItU"/>
+<span class="absolute top-3 left-3 px-space-md py-1 rounded-full bg-navy/90 text-on-primary font-label-md text-label-md tracking-wider">Workshop &amp; Roadshow</span>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-navy mb-space-xs group-hover:text-coral transition-colors">Seri Workshop Kreatif BSI Digination</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+                Roadshow multi-sekolah yang menyajikan pelatihan dasar desain grafis, industri kreatif digital, dan produksi podcast bagi ratusan mitra SMK dan pelajar di Jabodetabek.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-light-gray text-navy font-label-md text-label-md">Pembicara Publik</span>
+<span class="px-2 py-0.5 rounded bg-light-gray text-navy font-label-md text-label-md">Mentorship</span>
+</div>
+<button aria-label="Lihat detail proyek Seri Workshop Kreatif BSI Digination" class="w-9 h-9 rounded-full bg-light-gray text-navy flex items-center justify-center hover:bg-coral hover:text-on-primary transition-colors" onclick="openModal('Seri Workshop Kreatif BSI Digination', 'Program pelatihan seminar komprehensif yang membekali siswa SMK di kawasan Jabodetabek dengan keahlian grafika komputer aplikatif dan alur produksi konten kreatif modern.')">
+<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="project-item group bg-surface-container-lowest rounded overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="creative">
+<div class="relative w-full aspect-[16/9] overflow-hidden bg-surface-container">
+<img alt="Ruang kerja penyuntingan video digital modern" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern digital video editing workstation with dual monitors showcasing timeline tracks, Adobe Premiere Pro layout, audio mixer board, stylish ambient soft coral and navy studio backlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWemiZLmsJQTu-HaSujMazKscam1vx6faQ_CTWPzaW51n-IeZNMBHSdFcSo3-OtPFNH4bxzxgm_R_se9MePYnXOjM_YUVgGiEKCXf9K1YHaxxAYfBE4wCkFGmDVaxIPV0OxJouVYcRBPLgTdWVO39LBY6ixBKuXiioFOM08uoclgO1UMU0o6xO7QnAxPFJ-K5VJwAJPsSO9qUzT46IzAlw-G-2vwmrXERlW0zIz5k"/>
+<span class="absolute top-3 left-3 px-space-md py-1 rounded-full bg-coral text-on-primary font-label-md text-label-md tracking-wider">Konten Kreatif</span>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-navy mb-space-xs group-hover:text-coral transition-colors">Kurikulum Konten Digital &amp; Video</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+                Serial pembelajaran video terstruktur untuk metode blended learning, mencakup teknik editing video modern, storytelling visual, dan standar tipografi digital.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-light-gray text-navy font-label-md text-label-md">Premiere Pro</span>
+<span class="px-2 py-0.5 rounded bg-light-gray text-navy font-label-md text-label-md">e-Learning</span>
+</div>
+<button aria-label="Lihat detail kurikulum konten digital" class="w-9 h-9 rounded-full bg-light-gray text-navy flex items-center justify-center hover:bg-coral hover:text-on-primary transition-colors" onclick="openModal('Kurikulum Konten Digital &amp; Video', 'Memproduksi lebih dari 40 episode video pembelajaran terstruktur bagi mahasiswa perguruan tinggi, mencakup teknik editing broadcast dan pembuatan aset media interaktif.')">
+<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="project-item group bg-surface-container-lowest rounded overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="creative">
+<div class="relative w-full aspect-[16/9] overflow-hidden bg-surface-container">
+<img alt="Presentasi identitas visual dan materi cetak simposium" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Clean editorial visual brand identity presentation layout with typography specimen boards, corporate color swatches, logo mark sketches, printed event badge mockups on sleek white tabletop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrwbM9vEcaLOnK5LQnrJgXtVxPLHRedmZ233slMpBb01_4SKqTZcuAK2aXmHu29qKG3IEJui--Jh9rmCTEVgWv0WokIMwAdJrC4d_clyzUtO2VBma4EumsIqXaZhEbXipt-T1lCQ-tloZQjwb4w3LrCUEADjkFGU384NjtpN5DM0npyVmE6_k5QK9KYGElqz7FNbkuiTgCxHYtH_rjRNdczTmR3qRiggJsu0kTazE"/>
+<span class="absolute top-3 left-3 px-space-md py-1 rounded-full bg-navy/90 text-on-primary font-label-md text-label-md tracking-wider">Desain Grafis</span>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-navy mb-space-xs group-hover:text-coral transition-colors">Identitas Visual &amp; Media Editorial</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+                Paket agunan desain komprehensif untuk simposium universitas, backdrop panggung seminar, brosur panduan akademik, dan materi promosi media sosial.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-light-gray text-navy font-label-md text-label-md">Illustrator</span>
+<span class="px-2 py-0.5 rounded bg-light-gray text-navy font-label-md text-label-md">Media Cetak</span>
+</div>
+<button aria-label="Lihat detail proyek Identitas Visual &amp; Media Editorial" class="w-9 h-9 rounded-full bg-light-gray text-navy flex items-center justify-center hover:bg-coral hover:text-on-primary transition-colors" onclick="openModal('Identitas Visual &amp; Media Editorial', 'Arahan identitas desain untuk konferensi akademik skala nasional, mencakup backdrop cetak panggung, kartu identitas peserta, dan tata letak publikasi digital.')">
+<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="project-item group bg-surface-container-lowest rounded overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="tech">
+<div class="relative w-full aspect-[16/9] overflow-hidden bg-surface-container">
+<img alt="Tampilan antarmuka portal bimbingan dan portofolio akademik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern web application user interface displayed on laptop screen showing student learning analytics dashboard, clean cards, light minimalist UI, charts, and mentorship schedule planner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx23pf-3NXnujkCJ1pkv1aMj7lhtERVyu0YxWqjjGnXA9X9ClfXlKzzb40e36ln3-8oQAISqRcRkM7d-E-AamLoxVX-kqFuPvlRZZJlhBCrHmhXVFc-JDsC2DN3PTnQb7yx-J0b_Ojhu8ZQDcvxS5dMsg8YLyibuVtnqS0uNdLMcA_9_70nf_6COVp9g6aQtDIue09syoO4p63Apane9KbQ4uT9E-o2WXFA6_mr4s"/>
+<span class="absolute top-3 left-3 px-space-md py-1 rounded-full bg-skill-red text-on-primary font-label-md text-label-md tracking-wider">Teknologi Pendidikan</span>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-navy mb-space-xs group-hover:text-coral transition-colors">Pusat Mentorship &amp; Portofolio Akademik</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+                Konsep portal web interaktif yang memungkinkan mahasiswa sarjana memamerkan artefak skripsi, menerima masukan asinkron, dan menjadwalkan sesi bimbingan.
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-light-gray text-navy font-label-md text-label-md">Figma UI</span>
+<span class="px-2 py-0.5 rounded bg-light-gray text-navy font-label-md text-label-md">Teknologi Web</span>
+</div>
+<button aria-label="Lihat detail portal mentorship akademik" class="w-9 h-9 rounded-full bg-light-gray text-navy flex items-center justify-center hover:bg-coral hover:text-on-primary transition-colors" onclick="openModal('Pusat Mentorship &amp; Portofolio Akademik', 'Sistem supervisi akademik interaktif yang dirancang untuk merampingkan review karya desain mahasiswa dan kurasi portofolio karya digital.')">
+<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ACHIEVEMENTS & CERTIFICATIONS -->
+<section class="w-full max-w-[1200px] mx-auto px-gutter py-space-2xl" id="achievements">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="material-symbols-outlined text-coral text-[20px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Penghargaan &amp; Pencapaian</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-navy mb-space-xl tracking-tight">Prestasi &amp; Sertifikasi Profesi</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="p-space-lg rounded bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed text-skill-red flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">star</span>
+</div>
+<span class="font-label-md text-label-md text-coral font-bold uppercase tracking-wider block mb-1">Penghargaan Akademik</span>
+<h3 class="font-headline-sm text-headline-sm text-navy mb-space-xs">Penghargaan Dosen Berprestasi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Diberikan atas evaluasi pengajaran teladan dan tingkat kepuasan mahasiswa yang luar biasa dalam komputasi kreatif.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary">Universitas BSI</span>
+<span class="font-label-md text-label-md text-navy font-bold">2023</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-lg rounded bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-full bg-secondary-container text-navy flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">verified</span>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider block mb-1">Sertifikasi Profesi</span>
+<h3 class="font-headline-sm text-headline-sm text-navy mb-space-xs">Spesialis Multimedia Tersertifikasi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sertifikasi kompetensi nasional untuk standar perancangan multimedia dan penyiaran konten digital profesional.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary">BNSP Indonesia</span>
+<span class="font-label-md text-label-md text-navy font-bold">Terverifikasi</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-lg rounded bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-full bg-light-gray text-navy flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">mic_external_on</span>
+</div>
+<span class="font-label-md text-label-md text-navy font-bold uppercase tracking-wider block mb-1">Keynote Speaker</span>
+<h3 class="font-headline-sm text-headline-sm text-navy mb-space-xs">Pembicara Utama BSI Digination</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Menyampaikan materi utama "Fundamental Design Skills for Digital Creatives" di hadapan 500+ peserta SMK &amp; guru pendamping.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary">Jaringan DCC</span>
+<span class="font-label-md text-label-md text-navy font-bold">2022</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-space-lg rounded bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-full bg-coral/20 text-coral flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">menu_book</span>
+</div>
+<span class="font-label-md text-label-md text-skill-red font-bold uppercase tracking-wider block mb-1">Karya Ilmiah</span>
+<h3 class="font-headline-sm text-headline-sm text-navy mb-space-xs">Publikasi Jurnal Nasional</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Menerbitkan artikel ilmiah peer-reviewed tentang optimalisasi antarmuka multimedia pada pembelajaran daring pendidikan tinggi.</p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary">Terindeks SINTA</span>
+<span class="font-label-md text-label-md text-navy font-bold">2021</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT & CALL TO ACTION -->
+<section class="w-full bg-navy text-on-primary py-space-2xl" id="contact">
+<div class="max-w-[1200px] mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Contact Intro -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-charcoal text-coral font-label-md text-label-md mb-space-md">
+<span class="material-symbols-outlined text-[16px]">mail</span> Mari Berkolaborasi
+            </div>
+<h2 class="font-headline-xl text-headline-xl text-on-primary mb-space-md tracking-tight leading-tight">
+              Mari Ciptakan Sesuatu yang Berarti Bersama.
+            </h2>
+<p class="font-body-lg text-body-lg text-outline-variant mb-space-xl">
+              Terbuka untuk kuliah tamu akademik, lokakarya kreatif, kolaborasi media, konsultasi kurikulum, dan sesi keynote pembicara.
+            </p>
+</div>
+<!-- Direct info list -->
+<div class="space-y-space-md pt-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-charcoal flex items-center justify-center text-coral">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-outline-variant uppercase">Basis Akademik</span>
+<p class="font-body-sm text-body-sm text-on-primary">Universitas BSI Kampus Ciputat, Tangerang Selatan</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-charcoal flex items-center justify-center text-coral">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-outline-variant uppercase">Kontak Langsung</span>
+<p class="font-body-sm text-body-sm text-on-primary">deni.gunawan@bsi.ac.id</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-charcoal flex items-center justify-center text-coral">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-outline-variant uppercase">Waktu Respons</span>
+<p class="font-body-sm text-body-sm text-on-primary">Dalam 24–48 Jam Kerja</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Form Card -->
+<div class="lg:col-span-7 bg-charcoal/80 p-space-lg lg:p-space-xl rounded-lg backdrop-blur shadow-xl">
+<h3 class="font-headline-md text-headline-md text-on-primary mb-space-xs">Kirim Pesan / Permintaan Diskusi</h3>
+<p class="font-body-sm text-body-sm text-outline-variant mb-space-lg">Isi formulir di bawah ini dan saya akan segera menindaklanjuti untuk menjadwalkan agenda diskusi.</p>
+<form class="space-y-space-md" id="contact-form" onsubmit="handleFormSubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-outline-variant uppercase mb-1" for="name">Nama Lengkap Anda</label>
+<input class="w-full px-space-md py-2 rounded bg-navy text-on-primary placeholder:text-secondary outline-none focus:ring-2 focus:ring-coral font-body-sm text-body-sm" id="name" placeholder="misal Dr. Hendra / Sarah" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-outline-variant uppercase mb-1" for="email">Alamat Email</label>
+<input class="w-full px-space-md py-2 rounded bg-navy text-on-primary placeholder:text-secondary outline-none focus:ring-2 focus:ring-coral font-body-sm text-body-sm" id="email" placeholder="anda@institusi.ac.id" required="" type="email"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-outline-variant uppercase mb-1" for="subject">Jenis Kemitraan / Kebutuhan</label>
+<select class="w-full px-space-md py-2 rounded bg-navy text-on-primary outline-none focus:ring-2 focus:ring-coral font-body-sm text-body-sm" id="subject">
+<option value="guest-lecture">Kuliah Tamu Universitas / Dosen Tamu</option>
+<option value="bsi-digination">Workshop Siswa &amp; Roadshow BSI Digination</option>
+<option value="content-collab">Kolaborasi Produksi Media &amp; Konten Digital</option>
+<option value="research-consulting">Riset Akademik / Konsultasi Kurikulum</option>
+<option value="other">Pertanyaan Umum Lainnya</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-outline-variant uppercase mb-1" for="message">Pesan &amp; Topik Pembahasan</label>
+<textarea class="w-full px-space-md py-2 rounded bg-navy text-on-primary placeholder:text-secondary outline-none focus:ring-2 focus:ring-coral font-body-sm text-body-sm resize-none" id="message" placeholder="Ceritakan tentang institusi Anda, estimasi audiens, rentang waktu acara, serta tujuan kerja sama..." required="" rows="4"></textarea>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="inline-flex items-center gap-space-xs px-space-xl py-space-sm rounded-full bg-coral text-on-primary font-label-lg text-label-lg shadow-md hover:opacity-90 transition-all hover:scale-[1.02]" type="submit">
+<span>Kirim Pesan</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+<span class="font-body-sm text-body-sm text-coral hidden" id="form-feedback">Pesan Anda berhasil dikirim! Terima kasih.</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- MODAL FOR PROJECT PREVIEWS -->
+<div class="fixed inset-0 z-50 bg-navy/80 backdrop-blur-sm hidden items-center justify-center p-gutter" id="project-modal">
+<div class="bg-surface-container-lowest max-w-lg w-full rounded-lg p-space-xl shadow-2xl relative">
+<button aria-label="Tutup jendela pop up" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-navy hover:bg-light-gray transition-colors" onclick="closeModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<span class="font-label-md text-label-md text-coral uppercase tracking-widest block mb-1">Ikhtisar Proyek</span>
+<h3 class="font-headline-md text-headline-md text-navy mb-space-md" id="modal-title"></h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed" id="modal-desc"></p>
+<div class="flex justify-end">
+<button class="px-space-md py-1.5 rounded-full bg-navy text-on-primary font-label-lg text-label-lg hover:bg-charcoal transition-colors" onclick="closeModal()">
+          Tutup Jendela
+        </button>
+</div>
+</div>
+</div>
+<!-- INTERACTION SCRIPT -->
+<script>
+    // Project filter tabs
+    const filterButtons = document.querySelectorAll('#project-filters button');
+    const projectItems = document.querySelectorAll('.project-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Reset button states
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-navy', 'text-on-primary');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.add('bg-navy', 'text-on-primary');
+        btn.classList.remove('text-on-surface-variant');
+
+        const filter = btn.getAttribute('data-filter');
+        projectItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'flex';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Modal controls
+    function openModal(title, desc) {
+      document.getElementById('modal-title').textContent = title;
+      document.getElementById('modal-desc').textContent = desc;
+      const modal = document.getElementById('project-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('project-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Form feedback handler
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const feedback = document.getElementById('form-feedback');
+      feedback.classList.remove('hidden');
+      document.getElementById('contact-form').reset();
+      setTimeout(() => {
+        feedback.classList.add('hidden');
+      }, 5000);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-2xl"><div class="max-w-[1200px] mx-auto px-gutter py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg mb-space-xl"><div class="md:col-span-5"><span class="font-headline-md text-headline-md text-navy block mb-space-xs">DEVFOLIO</span><p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-space-md">Dosen Akademisi Ilmu Komputer &amp; Kreator Konten Digital yang memberdayakan mahasiswa dan pegiat teknologi melalui wawasan aplikatif dan siap pakai.</p><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-secondary uppercase">Bogor &amp; Tangerang Selatan, Indonesia</span></div></div><div class="md:col-span-4"><h4 class="font-headline-sm text-headline-sm text-navy mb-space-sm">Navigasi Cepat</h4><ul class="space-y-space-xs"><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-navy transition-colors" data-path="portfolio" href="#about">Tentang &amp; Ikhtisar</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-navy transition-colors" data-path="projects" href="#projects">Karya Unggulan</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-navy transition-colors" data-path="experience" href="#experience">Pengajaran &amp; Pengalaman</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-navy transition-colors" data-path="achievements" href="#achievements">Riset &amp; Publikasi</a></li></ul></div><div class="md:col-span-3"><h4 class="font-headline-sm text-headline-sm text-navy mb-space-sm">Hubungi &amp; Media Sosial</h4><ul class="space-y-space-xs"><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-navy transition-colors" data-path="contact" href="#contact">Permintaan Kontak</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-navy transition-colors" href="#">Google Scholar</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-navy transition-colors" href="#">Kanal YouTube</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-navy transition-colors" href="#">Profil LinkedIn</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Deni Gunawan, M.Kom. Seluruh hak cipta dilindungi.</p><div class="flex items-center gap-space-md"><span class="font-label-md text-label-md text-on-surface-variant">Dirancang dengan Estetika Editorial Bersih</span></div></div></div></footer></body></html>
